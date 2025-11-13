@@ -1,3 +1,182 @@
 * {
     box-sizing: border-box;
 }
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #d5b295;
+    overflow: visible;
+}
+
+
+.nav-bar {
+    border: 2px dashed #895D39;
+    border-radius: 10px;
+    justify-self: center;
+    width: 70%;
+    margin-top: 10px;
+    z-index: -2;
+}
+
+
+.nav-bar img {
+    position: absolute;
+    width: 90px;
+    border-radius: 200px;
+    margin-left: 2%;
+    margin-top: -8px;;
+    transition: 0.6s;
+    z-index: 0;
+}
+
+
+.nav-bar img:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+}
+
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    margin-left: 50px;
+    background-color:#895D39;
+    border: 2px solid #895D39;
+    border-radius: 40px;
+    padding: 10px;
+    width: 88%;
+}
+
+
+.nav-links li a {
+    padding: 0px 30px;
+    background-color: black;
+    border: 2px solid black;
+    border-radius: 40px;
+    text-decoration: none;
+    transition: 0.3s ease-out;
+    z-index: 10;
+}
+
+
+.nav-links li a:hover {
+    background-color: grey;
+    color: red;
+}
+
+
+.line-break {
+    width: 100%;
+    border: none;
+    border-top: 1px solid grey;
+    background-color: grey;
+    margin: 0;
+    margin-top: 20px;
+}
+
+
+.address-break {
+    width: 100%;
+    border: none;
+    border-top: 1px solid grey;
+    background-color: grey;
+    margin: 0;
+    margin-top: 660px;
+}
+/* Menu Design */
+.vertical-line {
+    position: absolute;  
+    height: 100%;
+    border: none;
+    border-right: 1px solid grey;
+    background-color: grey;
+    top: 100px;
+    left: 200px;
+}
+
+
+.title h2 {
+    margin-left: 65px;
+}
+
+
+.menu-nav {
+    position: absolute;
+    width: 200px;
+    height: 100%;
+    z-index: 1;
+    left: 0;
+}
+
+
+.dropdown-button {
+    padding: 12px;
+    width: 100%;
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    background-color: black;
+    display: block;
+    border: none;
+    text-align: left;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s ease-out;    
+}
+
+
+.dropdown-button.active {
+    color: lightgreen;
+    background-color: rgb(27, 27, 27);
+}
+
+
+.dropdown-button:hover {
+    color: lightgreen;
+    background-color: rgb(27, 27, 27);
+    display: block;
+}
+
+
+.dropdown-container {
+    display: none;
+    color: grey;
+    margin-left: 20px;
+    font-size: 13px;
+    animation: growDown 150ms ease-in-out forwards;
+    transform-origin: top center;
+}
+.dropdown-container p {
+    cursor: pointer;
+    border-left: 6px solid grey;
+    border-bottom: 1px solid grey;
+    padding: 2px 16px;
+    width: 58%;
+}
+
+
+@media only screen and (max-width: 620px) {
+    .nav-links img {
+        margin-left: 20px;
+    }
+}
+
+
+/* Animations  */
+
+
+@keyframes growDown {
+    0% {
+        transform: scaleY(0)
+    }
+    80% {
+        transform: scaleY(1.1)
+    }
+    100% {
+        transform: scaleY(1)
+    }
+}
+}
