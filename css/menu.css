@@ -131,6 +131,8 @@ body {
 .dropdown-button.active {
     color: lightgreen;
     background-color: rgb(27, 27, 27);
+    animation: growDown 250ms ease-in-out forwards;
+    transform-origin: top center;
 }
 
 
@@ -146,7 +148,7 @@ body {
     color: grey;
     margin-left: 20px;
     font-size: 13px;
-    animation: growDown 150ms ease-in-out forwards;
+    animation: growDown 200ms ease-in-out forwards;
     transform-origin: top center;
 }
 .dropdown-container p {
@@ -179,4 +181,4 @@ body {
         transform: scaleY(1)
     }
 }
-}
+
