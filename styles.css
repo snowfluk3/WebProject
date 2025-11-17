@@ -6,24 +6,37 @@
 }
 
 .navbar {
-    background-color: #895D39;
-    padding: 15px 15px;
-    justify-content: flex-end;
-    border-top: 40px;
-    border-left: 5px;
+    background-color: #895d39;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
 }
 .nav-logo img{
     height: 100px;
-    position: absolute;
+    position: static;
+    display: block;
+    
 }
+
+html, body{
+  height: 100%;
+  margin: 0;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+
 
 .nav-list {
   list-style: none;
   display: flex;
   justify-content: right;
   gap: 20px;
-  margin: 15;
-  padding: 5px 10px;
+  margin: 0px;
+  padding: 0px;
 }
 
 .nav-list li{
@@ -56,7 +69,12 @@
   font: bold;
   font-family: 'Kingdred';
   text-decoration: none;
-  color: rgb(255, 255, 255);
+  background-color: #f6f8eb;
+  color: rgb(0, 0, 0);
+  border: 8px solid #f6f8eb;
+  border-radius: 7px;
+  transition: background-color 0.4 ease, color 0.3;
+  display: inline-block;
 }
 
 .menu_bar {
@@ -76,7 +94,7 @@ body {
 }
 
 video {
-  position:fixed;
+  position:absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -88,15 +106,78 @@ video {
 .features {
   color: whitesmoke;
   font-family: 'Kingdred';
-
+  font-size: 2.3em;
 }
 
-.features_sec {
-  background-color: #9f7553;
-  height: 100vh;
+.peppermint_sec, .apple_sec {
+  margin-bottom: 0px;
+  text-align: center;
+  
 }
 
-div {
-  background-color: black;
+h2 {
   color: white;
+  font-family: 'Kingdred';
+  font-size: 1.1em;
+}
+
+.peppermint_sec img, .apple_sec img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px; 
+}
+
+h3 {
+  color: white;
+  font-family: 'Kingdred';
+  font-size: 1.3em;
+}
+.pep_container, .apple_container {
+  position: relative;
+  width: 100%;
+}
+
+.pep_container img, .apple_container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.pepermint_text h2 {
+  font-family: 'Kingdred';
+  color: white;
+  position: absolute;
+  top: 5px;
+  left: 30px;
+}
+.pepermint_text p {
+  position: absolute;
+  top: 30px;  
+  left: 30px;  
+  color: white;
+  font-family: 'Kingdred';
+}
+
+.apple_text h3 {
+  font-family: 'Kingdred';
+  color: white;
+  position: absolute;
+  top: 5px;
+  left: 500px;
+}
+.apple_text p {
+  position: absolute;
+  top: 30px;  
+  left: 30px;  
+  color: white;
+  font-family: 'Kingdred';
+}
+footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #000000;
+  color: white;
+  text-align: center;
 }
