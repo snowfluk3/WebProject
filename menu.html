@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title> Menu </title>
     <link rel="stylesheet" href="css/menu.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     </head>
     <body>
         <nav class="nav-bar">
@@ -21,35 +23,127 @@
         </nav>
 
 
-        <hr class="line-break">
-        <main>
-            <hr class="vertical-line">
+    <hr class="line-break">
+    <main>
+        <section class="menu-bar">
             <div>
-                <span><h2 style="margin-left: 65px;">Menu</h2></span>
+                <span><h2 style="margin-left: 60px;text-transform: uppercase;">Menu</h2></span>
             </div>
             <div class="menu-nav">
-                <button class="dropdown-button">Drinks</button>
+                <button class="dropdown-button" id="drink-button">Drinks</button>
                 <div class="dropdown-container">
-                    <p>Hot Coffee</p>
-                    <p>Cold Coffee</p>
+                    <a href="#hot-coffee"><p>Hot Coffee</p></a>
+                    <a href="#cold-coffee"><p>Cold Coffee</p></a>
                     <p>Tea</p>
                 </div>
-                <button class="dropdown-button">Food</button>
+                <button class="dropdown-button" id="food-button">Food</button>
                 <div class="dropdown-container">
                     <p>Breakfast</p>
                     <p>Lunch</p>
                     <p>Pastries</p>
-                    <p>Snacks / Treats</p>
+                    <p>Snacks</p>
                 </div>
-                <button class="dropdown-button">Specials</button>
+                <button class="dropdown-button" id="seasonal-button">Specials</button>
                 <div class="dropdown-container">
                     <p>Test</p>
                     <p>Test</p>
                     <p>Test</p>
                 </div>
             </div>
-        </main>
-        <hr class="address-break">
+        </section>
+
+        <section class="main-content">
+            <section class="active" id="drinks">
+                <div id="hot-coffee">
+                    <h2>Hot Coffee</h2>
+                    <div class="object">
+                        <img src="">
+                        <h3>Regular Brew \\ 250 Cals \\ $2.99</h3>
+                        <p>Freshly ground coffee beans with your choice of sugar, milk, or cream.</p>
+                        <div class="enlarged-img">
+                            <img src="">
+                        </div>
+                        <div class="size">
+                            <h1>S</h1>
+                            <h1>M</h1>
+                            <h1>L</h1>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="object">
+                        <img src="">
+                        <h3>Mocha \\ 370 Cals \\ $5.50</h3>
+                        <p>Espresso coffee topped with milk, whipping cream, and cinnamon.</p>
+                        <div class="enlarged-img">
+                            <img src="">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="object">
+                        <img src="">
+                        <h3>Latte \\ 220 Cals \\ $4.70</h3>
+                        <p>Latte topped with your choice of milk or cream.</p>
+                        <div class="enlarged-img">
+                            <img src="">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="object">
+                        <img src="">
+                        <h3>Test</h3>
+                        <p>Test</p>
+                        <div class="enlarged-img">
+                            <img src="">
+                        </div>
+                    </div>
+                </div>
+                <div id="cold-coffee">
+                    <h2>Cold Coffee</h2>
+                    <div class="object">
+                        <img src="">
+                        <h3>Test</h3>
+                        <p>Test</p>
+                        <div class="enlarged-img">
+                            <img src="">
+                        </div>
+                        <div class="size">
+                            <h1>S</h1>
+                            <h1>M</h1>
+                            <h1>L</h1>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="inactive" id="foods">
+                <div id="something">
+                    <h2>Breakfast</h2>
+                    <div class="object">
+                        <img src="">
+                        <h3>Test</h3>
+                        <p>Test</p>
+                        <div class="enlarged-img">
+                            <img src="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="inactive" id="seasonal">
+                <div id="eee">
+                    <h2>Seasonal Drinks</h2>
+                    <div class="object">
+                        <img src="">
+                        <h3>Test</h3>
+                        <p>Test</p>
+                        <div class="enlarged-img">
+                            <img src="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
     <script src="javascript/menu.js"></script>
     </body>
 </html>

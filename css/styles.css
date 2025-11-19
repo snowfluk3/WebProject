@@ -51,36 +51,30 @@
     font: bold;
 }
 
-.menu_bar li a{
+.menu_bar {
+    position: relative;
+    list-style: none;  
+}
+
+.menu-bar a {
+    position: absolute;
+    width: 100%;
     font-size: 50px;
     font: bold;
     font-family: 'Kingdred';
     text-decoration: none;
-    color: rgb(255, 255, 255);
-}
-
-.menu_bar {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 500px;
-    width: 100%;
-    box-sizing: border-box;
+    color: white;
+    background-color: black;
 }
 
 body {
     padding: 0;
     margin: 0;
-
 }
 
 video {
-    position:absolute;
-    top: 0;
-    left: 0;
+    margin: 0;
     width: 100%;
-    height: 100%;
     object-fit: cover;
     z-index: -4;
 }
@@ -94,9 +88,4 @@ video {
 .features_sec {
     background-color: #9f7553;
     height: 100vh;
-}
-
-div {
-    background-color: black;
-    color: white;
 }
