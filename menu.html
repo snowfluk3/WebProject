@@ -11,6 +11,7 @@
     <body>
         <nav class="nav-bar">
             <div>
+                <!-- Hero Image -->
                 <a href="index.html"><img src="images_videos/The_Brew_logo.jpg" alt="Logo"></a>
             </div>
             <div>
@@ -22,32 +23,28 @@
             </div>
         </nav>
 
-
-    <hr class="line-break">
-    <main>
+    <main class="content-grid">
         <section class="menu-bar">
             <div>
                 <span><h2 style="margin-left: 60px;text-transform: uppercase;">Menu</h2></span>
             </div>
             <div class="menu-nav">
                 <button class="dropdown-button" id="drink-button">Drinks</button>
-                <div class="dropdown-container">
+                <div class="dropdown-container active" id="drink-options">
                     <a href="#hot-coffee"><p>Hot Coffee</p></a>
                     <a href="#cold-coffee"><p>Cold Coffee</p></a>
-                    <p>Tea</p>
                 </div>
+                <br>
                 <button class="dropdown-button" id="food-button">Food</button>
-                <div class="dropdown-container">
-                    <p>Breakfast</p>
-                    <p>Lunch</p>
-                    <p>Pastries</p>
-                    <p>Snacks</p>
+                <div class="dropdown-container" id="food-options">
+                    <p>Baked Goods</p>
+                    <p>Sandwiches</p>
                 </div>
+                <br>
                 <button class="dropdown-button" id="seasonal-button">Specials</button>
-                <div class="dropdown-container">
-                    <p>Test</p>
-                    <p>Test</p>
-                    <p>Test</p>
+                <div class="dropdown-container" id="seasonal-options">
+                    <p>Special Drinks</p>
+                    <p>Special Foods</p>
                 </div>
             </div>
         </section>
@@ -57,11 +54,59 @@
                 <div id="hot-coffee">
                     <h2>Hot Coffee</h2>
                     <div class="object">
-                        <img src="">
-                        <h3>Regular Brew \\ 250 Cals \\ $2.99</h3>
+                        <img src="images_videos/cappuccino.jpg">
+                        <h3>Cappuccino \\ 100 Cals \\ $3.99</h3>
                         <p>Freshly ground coffee beans with your choice of sugar, milk, or cream.</p>
                         <div class="enlarged-img">
-                            <img src="">
+                            <img src="images_videos/cappuccino.jpg">
+                        </div>
+                        <div class="size">
+                            <h1>S</h1>
+                            <h1>M</h1>
+                            <h1>L</h1>
+                        </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="object">
+                        <img src="images_videos/latte-art-on-mocha_1200x1200.jpg">
+                        <h3>Mocha \\ 320 Cals \\ $5.50</h3>
+                        <p>A chocolate-flavored espresso coffee topped with milk, whipping cream, and cinnamon.</p>
+                        <div class="enlarged-img">
+                            <img src="images_videos/latte-art-on-mocha_1200x1200.jpg">
+                        </div>
+                        <div class="size">
+                            <h1>S</h1>
+                            <h1>M</h1>
+                            <h1>L</h1>
+                        </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="object">
+                        <img src="images_videos/latte.webp">
+                        <h3>Latte \\ 220 Cals \\ $4.50</h3>
+                        <p>Latte espresso drink made with steamed milk topped with your choice of milk or cream.</p>
+                        <div class="enlarged-img">
+                            <img src="images_videos/latte.webp">
+                        </div>
+                        <div class="size">
+                            <h1>S</h1>
+                            <h1>M</h1>
+                            <h1>L</h1>
+                        </div>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+                <div id="cold-coffee">
+                    <h2>Cold Coffee</h2>
+                    <div class="object">
+                        <img src="images_videos/iced-mocha.webp">
+                        <h3>Iced Mocha \\ 340 Cals \\ $5.99</h3>
+                        <p>A chocolate-flavored iced espresso drink. Can be topped with whipped cream, and cinnamon. </p>
+                        <div class="enlarged-img">
+                            <img src="images_videos/iced-mocha.webp">
                         </div>
                         <div class="size">
                             <h1>S</h1>
@@ -71,44 +116,29 @@
                     </div>
                     <br>
                     <div class="object">
-                        <img src="">
-                        <h3>Mocha \\ 370 Cals \\ $5.50</h3>
-                        <p>Espresso coffee topped with milk, whipping cream, and cinnamon.</p>
+                        <img src="images_videos/Iced_Latte.jpg">
+                        <h3>Iced Latte</h3>
+                        <p>Latte espresso drink with ice. Can be topped with chocolate drizzle and cream.</p>
                         <div class="enlarged-img">
-                            <img src="">
-                        </div>
-                    </div>
-                    <br>
-                    <div class="object">
-                        <img src="">
-                        <h3>Latte \\ 220 Cals \\ $4.70</h3>
-                        <p>Latte topped with your choice of milk or cream.</p>
-                        <div class="enlarged-img">
-                            <img src="">
-                        </div>
-                    </div>
-                    <br>
-                    <div class="object">
-                        <img src="">
-                        <h3>Test</h3>
-                        <p>Test</p>
-                        <div class="enlarged-img">
-                            <img src="">
-                        </div>
-                    </div>
-                </div>
-                <div id="cold-coffee">
-                    <h2>Cold Coffee</h2>
-                    <div class="object">
-                        <img src="">
-                        <h3>Test</h3>
-                        <p>Test</p>
-                        <div class="enlarged-img">
-                            <img src="">
+                            <img src="images_videos/Iced_Latte.jpg">
                         </div>
                         <div class="size">
                             <h1>S</h1>
-                            <h1>M</h1>
+                            <h1></h1>
+                            <h1>L</h1>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="object">
+                        <img src="images_videos/frappe.webp">
+                        <h3>Frappé</h3>
+                        <p>Test</p>
+                        <div class="enlarged-img">
+                            <img src="images_videos/frappe.webp">
+                        </div>
+                        <div class="size">
+                            <h1>S</h1>
+                            <h1></h1>
                             <h1>L</h1>
                         </div>
                     </div>
@@ -117,7 +147,7 @@
 
             <section class="inactive" id="foods">
                 <div id="something">
-                    <h2>Breakfast</h2>
+                    <h2>Baked Goods</h2>
                     <div class="object">
                         <img src="">
                         <h3>Test</h3>
@@ -134,16 +164,52 @@
                     <h2>Seasonal Drinks</h2>
                     <div class="object">
                         <img src="">
-                        <h3>Test</h3>
+                        <h3>Matcha</h3>
                         <p>Test</p>
                         <div class="enlarged-img">
                             <img src="">
+                        </div>
+                        <div class="size">
+                            <h1>S</h1>
+                            <h1>M</h1>
+                            <h1>L</h1>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="object">
+                        <img src="images_videos/eggnog.webp">
+                        <h3>Eggnog \\ 230 Cals \\ $4.00</h3>
+                        <p>A hearty holiday drink for you to enjoy! Rich and chilled with brewed coffee and optional nutmeg and cinnamon.</p>
+                        <div class="enlarged-img">
+                            <img src="images_videos/eggnog.webp">
+                        </div>
+                        <div class="size">
+                            <h1>S</h1>
+                            <h1>M</h1>
+                            <h1>L</h1>
                         </div>
                     </div>
                 </div>
             </section>
         </section>
     </main>
+
+        <footer class="site-footer">
+    <div class="footer-inner container">
+
+    <div class="footer-info">
+        <p><strong>The Brew on Cordova</strong></p>
+        <p>1423 Cordova Drive, Vancouver BC V5R S9T</p>
+        <p><a href="mailto:thebrew@cordova.ca">thebrew@cordova.ca</a></p>
+        <p>+1 (778) 345-5612</p>
+    </div>
+
+    <div class="footer-info">
+        <img src="images_videos/The_Brew_logo.jpg" alt="Logo">
+        <p>&copy; 2025 The Brew on Cordova. All rights reserved.</p>
+    </div>
+
+    </div>
     <script src="javascript/menu.js"></script>
     </body>
 </html>
