@@ -1,6 +1,6 @@
 const drinkButton = document.getElementById("drink-button")
 const foodButton = document.getElementById("food-button")
-const seasonalButton = document.getElementById("seasonal-button")
+const specialButton = document.getElementById("special-button")
 
 
 drinkButton.addEventListener('click', function() {
@@ -12,13 +12,13 @@ drinkButton.addEventListener('click', function() {
     addOptions.classList.remove("inactive")
     addOptions.classList.add("active")
 
-    const removeContent = document.querySelectorAll("#foods, #seasonal")
+    const removeContent = document.querySelectorAll("#foods, #special")
     removeContent.forEach(element => {
         element.classList.remove("active")
         element.classList.add("inactive") 
     })
 
-    const removeOptions = document.querySelectorAll("#food-options, #seasonal-options")
+    const removeOptions = document.querySelectorAll("#food-options, #special-options")
     removeOptions.forEach(element => {
         element.classList.remove("active")
         element.classList.add("inactive") 
@@ -34,25 +34,25 @@ foodButton.addEventListener('click', function() {
     addOptions.classList.remove("inactive")
     addOptions.classList.add("active")
 
-    const removeContent = document.querySelectorAll("#drinks, #seasonal")
+    const removeContent = document.querySelectorAll("#drinks, #special")
     removeContent.forEach(element => {
         element.classList.remove("active")
         element.classList.add("inactive") 
     })
 
-    const removeOptions = document.querySelectorAll("#drink-options, #seasonal-options")
+    const removeOptions = document.querySelectorAll("#drink-options, #special-options")
     removeOptions.forEach(element => {
         element.classList.remove("active")
         element.classList.add("inactive") 
     })
 })
 
-seasonalButton.addEventListener('click', function() {
-    const addContent = document.querySelector("#seasonal")
+specialButton.addEventListener('click', function() {
+    const addContent = document.querySelector("#special")
     addContent.classList.remove("inactive")
     addContent.classList.add("active")
 
-    const addOptions = document.querySelector("#seasonal-options")
+    const addOptions = document.querySelector("#special-options")
     addOptions.classList.remove("inactive")
     addOptions.classList.add("active")
 

@@ -1,20 +1,19 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
     <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title> Menu </title>
-    <link rel="stylesheet" href="css/menu.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/menu.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     </head>
     <body>
         <nav class="nav-bar">
+            <!-- Hero Image -->
+            <a href="index.html"><img src="images_videos/The_Brew_logo.jpg" alt="Logo"></a>
             <div>
-                <!-- Hero Image -->
-                <a href="index.html"><img src="images_videos/The_Brew_logo.jpg" alt="Logo"></a>
-            </div>
-            <div>
+                <!-- Navigation Links  -->
                 <ul class="nav-links">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="menu.html">Menu</a></li>
@@ -25,76 +24,72 @@
 
     <main class="content-grid">
         <section class="menu-bar">
-            <div>
-                <span><h2 style="margin-left: 60px;text-transform: uppercase;">Menu</h2></span>
-            </div>
+        <!-- Menu Buttons and Options  -->
+            <h2>Menu</h2>
             <div class="menu-nav">
                 <button class="dropdown-button" id="drink-button">Drinks</button>
                 <div class="dropdown-container active" id="drink-options">
-                    <a href="#hot-coffee"><p>Hot Coffee</p></a>
-                    <a href="#cold-coffee"><p>Cold Coffee</p></a>
+                    <a href="#hot-coffee" aria-label="Go to Hot Coffee"><p>Hot Coffee</p></a>
+                    <a href="#cold-coffee" aria-label="Go to Cold Coffee"><p>Cold Coffee</p></a>
                 </div>
                 <br>
                 <button class="dropdown-button" id="food-button">Food</button>
                 <div class="dropdown-container" id="food-options">
-                    <p>Baked Goods</p>
-                    <p>Sandwiches</p>
+                    <a href="#baked-goods" aria-label="Go to Baked Goods"><p>Baked Goods</p></a>
+                    <a href="#sandwiches" aria-label="Go to Sandwiches"><p>Sandwiches</p></a>
                 </div>
                 <br>
-                <button class="dropdown-button" id="seasonal-button">Specials</button>
-                <div class="dropdown-container" id="seasonal-options">
-                    <p>Special Drinks</p>
-                    <p>Special Foods</p>
+                <button class="dropdown-button" id="special-button">Specials</button>
+                <div class="dropdown-container" id="special-options">
+                    <a href="#special-drinks" aria-label="Go to Drinks"><p>Drinks</p></a>
+                    <a href="#special-foods" aria-label="Go to Foods"><p>Foods</p></a>
                 </div>
             </div>
         </section>
 
-        <section class="main-content">
+        <div class="main-content">
             <section class="active" id="drinks">
                 <div id="hot-coffee">
                     <h2>Hot Coffee</h2>
                     <div class="object">
-                        <img src="images_videos/cappuccino.jpg">
+                        <img src="images_videos/cappuccino.jpg" alt="cappucino">
                         <h3>Cappuccino \\ 100 Cals \\ $3.99</h3>
                         <p>Freshly ground coffee beans with your choice of sugar, milk, or cream.</p>
                         <div class="enlarged-img">
-                            <img src="images_videos/cappuccino.jpg">
+                            <img src="images_videos/cappuccino.jpg" alt="cappucino">
                         </div>
                         <div class="size">
-                            <h1>S</h1>
-                            <h1>M</h1>
-                            <h1>L</h1>
-                        </div>
+                            <h4>S</h4>
+                            <h4>M</h4>
+                            <h4>L</h4>
                         </div>
                     </div>
                     <br>
                     <div class="object">
-                        <img src="images_videos/latte-art-on-mocha_1200x1200.jpg">
+                        <img src="images_videos/latte-art-on-mocha_1200x1200.jpg" alt="latte">
                         <h3>Mocha \\ 320 Cals \\ $5.50</h3>
                         <p>A chocolate-flavored espresso coffee topped with milk, whipping cream, and cinnamon.</p>
                         <div class="enlarged-img">
-                            <img src="images_videos/latte-art-on-mocha_1200x1200.jpg">
+                            <img src="images_videos/latte-art-on-mocha_1200x1200.jpg" alt="latte">
                         </div>
                         <div class="size">
-                            <h1>S</h1>
-                            <h1>M</h1>
-                            <h1>L</h1>
-                        </div>
+                            <h4>S</h4>
+                            <h4>M</h4>
+                            <h4>L</h4>
                         </div>
                     </div>
                     <br>
                     <div class="object">
-                        <img src="images_videos/latte.webp">
+                        <img src="images_videos/latte.webp" alt="iced mocha">
                         <h3>Latte \\ 220 Cals \\ $4.50</h3>
                         <p>Latte espresso drink made with steamed milk topped with your choice of milk or cream.</p>
                         <div class="enlarged-img">
-                            <img src="images_videos/latte.webp">
+                            <img src="images_videos/latte.webp" alt="iced mocha">
                         </div>
                         <div class="size">
-                            <h1>S</h1>
-                            <h1>M</h1>
-                            <h1>L</h1>
-                        </div>
+                            <h4>S</h4>
+                            <h4>M</h4>
+                            <h4>L</h4>
                         </div>
                     </div>
                     <br>
@@ -102,99 +97,165 @@
                 <div id="cold-coffee">
                     <h2>Cold Coffee</h2>
                     <div class="object">
-                        <img src="images_videos/iced-mocha.webp">
+                        <img src="images_videos/iced-mocha.webp" alt="iced mocha">
                         <h3>Iced Mocha \\ 340 Cals \\ $5.99</h3>
                         <p>A chocolate-flavored iced espresso drink. Can be topped with whipped cream, and cinnamon. </p>
                         <div class="enlarged-img">
-                            <img src="images_videos/iced-mocha.webp">
+                            <img src="images_videos/iced-mocha.webp" alt="iced mocha">
                         </div>
                         <div class="size">
-                            <h1>S</h1>
-                            <h1>M</h1>
-                            <h1>L</h1>
+                            <h4>S</h4>
+                            <h4>M</h4>
+                            <h4>L</h4>
                         </div>
                     </div>
                     <br>
                     <div class="object">
-                        <img src="images_videos/Iced_Latte.jpg">
-                        <h3>Iced Latte</h3>
-                        <p>Latte espresso drink with ice. Can be topped with chocolate drizzle and cream.</p>
+                        <img src="images_videos/Iced_Latte.jpg" alt="iced latte">
+                        <h3>Iced Latte \\ 150 Cals \\ $4.75</h3>
+                        <p>Latte espresso drink with ice. Can be topped with chocolate or caramel drizzle. Whipped cream and cold foam can also be added.</p>
                         <div class="enlarged-img">
-                            <img src="images_videos/Iced_Latte.jpg">
+                            <img src="images_videos/Iced_Latte.jpg" alt="iced latte">
                         </div>
                         <div class="size">
-                            <h1>S</h1>
-                            <h1></h1>
-                            <h1>L</h1>
+                            <h4>S</h4>
+                            <h4>M</h4>
+                            <h4>L</h4>
                         </div>
                     </div>
                     <br>
                     <div class="object">
-                        <img src="images_videos/frappe.webp">
-                        <h3>Frappé</h3>
-                        <p>Test</p>
+                        <img src="images_videos/frappe.webp" alt="frappe">
+                        <h3>Mocha Frappé \\ 360 Cals \\ $6.75</h3>
+                        <p>Blended iced drink made with espresso. A creamy and sweet mixture of chocolate and coffee.</p>
                         <div class="enlarged-img">
-                            <img src="images_videos/frappe.webp">
+                            <img src="images_videos/frappe.webp" alt="frappe">
                         </div>
                         <div class="size">
-                            <h1>S</h1>
-                            <h1></h1>
-                            <h1>L</h1>
+                            <h4>S</h4>
+                            <h4>M</h4>
+                            <h4>L</h4>
                         </div>
                     </div>
+                    <br><br><br><hr><hr>
                 </div>
             </section>
 
             <section class="inactive" id="foods">
-                <div id="something">
+                <div id="baked-goods">
                     <h2>Baked Goods</h2>
                     <div class="object">
-                        <img src="">
-                        <h3>Test</h3>
-                        <p>Test</p>
+                        <img src="images_videos/blueberry-muffins-4-2-2.webp" alt="blueberry muffins">
+                        <h3>Blueberry Muffins \\ 230 Cals \\ $2.49</h3>
+                        <p>Soft and fluffy muffins that contain sweet blueberries. While small, each muffin packs a flavorful experience!</p>
                         <div class="enlarged-img">
-                            <img src="">
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="inactive" id="seasonal">
-                <div id="eee">
-                    <h2>Seasonal Drinks</h2>
-                    <div class="object">
-                        <img src="">
-                        <h3>Matcha</h3>
-                        <p>Test</p>
-                        <div class="enlarged-img">
-                            <img src="">
-                        </div>
-                        <div class="size">
-                            <h1>S</h1>
-                            <h1>M</h1>
-                            <h1>L</h1>
+                            <img src="images_videos/blueberry-muffins-4-2-2.webp" alt="blueberry muffins">
                         </div>
                     </div>
                     <br>
                     <div class="object">
-                        <img src="images_videos/eggnog.webp">
-                        <h3>Eggnog \\ 230 Cals \\ $4.00</h3>
-                        <p>A hearty holiday drink for you to enjoy! Rich and chilled with brewed coffee and optional nutmeg and cinnamon.</p>
+                        <img src="images_videos/biscotti.webp" alt="biscotti">
+                        <h3>Biscotti \\ 140 Cals \\ $1.50</h3>
+                        <p>An Italian cookie baked to be deliciously crispy. While not sweet, they are great when paired with sweets.</p>
                         <div class="enlarged-img">
-                            <img src="images_videos/eggnog.webp">
-                        </div>
-                        <div class="size">
-                            <h1>S</h1>
-                            <h1>M</h1>
-                            <h1>L</h1>
+                            <img src="images_videos/biscotti.webp" alt="biscotti">
                         </div>
                     </div>
                 </div>
+                <div id="sandwiches">
+                    <h2>Sandwiches</h2>
+                    <div class="object">
+                        <img src="images_videos/eggandcheesesandwich.webp" alt="egg sandwich">
+                        <h3>Egg Sandwich \\ 350 Cals \\ $6.50</h3>
+                        <p>An egg-filled sandwich. A great way to start your day, and a staple for some basic breakfasts!</p>
+                        <div class="enlarged-img">
+                            <img src="images_videos/eggandcheesesandwich.webp" alt="egg sandwich">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="object">
+                        <img src="images_videos/large_Bacon_sandwich.webp" alt="bacon sandwich">
+                        <h3>Bacon Sandwich \\ 550 Cals \\ $7.75</h3>
+                        <p>Filled with savory, and crunchy bacon. Mixed with some very soft bread to emphasize the crunch!</p>
+                        <div class="enlarged-img">
+                            <img src="images_videos/large_Bacon_sandwich.webp" alt="bacon sandwich">
+                        </div>
+                    </div>
+                    <br><br><br><hr><hr>
+                </div>
             </section>
-        </section>
+
+            <section class="inactive" id="special">
+                <div id="special-drinks">
+                    <h2>Special Drinks</h2>
+                    <div class="object">
+                        <img src="images_videos/Macha_latte-1_480x480.jpg" alt="matcha latte">
+                        <h3>Matcha Latte \\ 220 Cals \\ $6.00</h3>
+                        <p>Made by combining milk and ground-down matcha to create an energizing, yet bitter drink! Can be hot or iced.</p>
+                        <div class="enlarged-img">
+                            <img src="images_videos/Macha_latte-1_480x480.jpg" alt="matcha latte">
+                        </div>
+                        <div class="size">
+                            <h4>S</h4>
+                            <h4>M</h4>
+                            <h4>.</h4>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="object">
+                        <img src="images_videos/eggnog_latte.jpg" alt="eggnog latte">
+                        <h3>Eggnog Latte \\ 230 Cals \\ $4.00</h3>
+                        <p>Espresso blended with creamy eggnog, finished with our homemade whipped cream, cinnamon and a sprinkle of nutmeg.</p>
+                        <div class="enlarged-img">
+                            <img src="images_videos/eggnog_latte.jpg" alt="eggnog latte">
+                        </div>
+                        <div class="size">
+                            <h4>.</h4>
+                            <h4>M</h4>
+                            <h4>L</h4>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="object">
+                        <img src="images_videos/peppermint_special.JPG" alt="">
+                        <h3>Peppermint Hot Chocolate \\ 440 Cals \\ $7.00</h3>
+                        <p>Rich cocoa, topped with minty peppermint crumble and whipping cream.</p>
+                        <div class="enlarged-img">
+                            <img src="images_videos/peppermint_special.JPG" alt="">
+                        </div>
+                        <div class="size">
+                            <h4>S</h4>
+                            <h4>M</h4>
+                            <h4>L</h4>
+                        </div>
+                    </div>
+                </div>
+                <div id="special-foods">
+                    <h2>Special Foods</h2>
+                    <div class="object">
+                        <img src="images_videos/apple_cake.jpg" alt="apple cake slice">
+                        <h3>Apple Cake \\ 295 Cals \\ $10.50</h3>
+                        <p>Freshly baked pie with juicy apple slices topped with cinnamon.</p>
+                        <div class="enlarged-img">
+                            <img src="images_videos/apple_cake.jpg" alt="apple cake slice">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="object">
+                        <img src="images_videos/Chocolate-Mango-Tart-4_square-300x300.jpg" alt="chocolate mango tart">
+                        <h3>Mango Tart \\ 590 Cals \\ $8.25</h3>
+                        <p>This tart is brushed with melted chocolate before being filled with mango curd alongside whipped cream and cocoa as toppings!</p>
+                        <div class="enlarged-img">
+                            <img src="images_videos/Chocolate-Mango-Tart-4_square-300x300.jpg" alt="chocolate mango tart">
+                        </div>
+                    </div>
+                    <br><br><br><hr><hr>
+                </div>
+            </section>
+        </div>
     </main>
 
-        <footer class="site-footer">
+<footer class="site-footer">
     <div class="footer-inner container">
 
     <div class="footer-info">
@@ -203,13 +264,13 @@
         <p><a href="mailto:thebrew@cordova.ca">thebrew@cordova.ca</a></p>
         <p>+1 (778) 345-5612</p>
     </div>
-
     <div class="footer-info">
-        <img src="images_videos/The_Brew_logo.jpg" alt="Logo">
+        <img src="images_videos/The_brew_transparent_cropped.png" style="width:300px;" alt="The Brew Logo">
         <p>&copy; 2025 The Brew on Cordova. All rights reserved.</p>
     </div>
-
     </div>
+</footer>
+
     <script src="javascript/menu.js"></script>
     </body>
 </html>
