@@ -1,0 +1,26 @@
+-- Grayson --
+
+Prompt #1: I have been tasked with making an "about me" page for a fictitious coffee shop named 
+"The Brew on Cordova" for my Fundamental Web Technology course. 
+We've learned a few basics of HTML and CSS, but I have no idea where to start here. 
+Please provide some basic code to work from. The overall style of the page should be stylish and warm.
+
+Prompt #2: How can I rotate from left to right with each team member? 
+
+Prompt #3: I'm struggling to make my webpage mobile-friendly. 
+Specifically, the about section looks atrocious on mobile, with the image bullying the text out onto the side of the screen. 
+The team section does look better with the text going properly under the image, though on mobile the images still exceed 
+the allotted box, which isn't ideal. Help fix please!
+
+Prompt #4: Great, so the default desktop view, and the mobile view are working properly, but if I do a minimized view on desktop, 
+then it breaks, with the text being bullied out to the side by the images. 
+How can I make it so that it behaves similarly to the mobile view, with the image on top, text on bottom, 
+for smaller desktop screens? (For the chat references)
+
+-- Victor --
+
+1. how do i adjust the padding for when the tab is in mobile only
+2. my featured items are slightly off centered how can i fix that
+3. my video on the far right does not take up the full length of the page
+4. how when i change the size of my tab, my menu button does not shrink along with the rest or stay in the same place
+5. how do i make my big menu button be at the center of the video
